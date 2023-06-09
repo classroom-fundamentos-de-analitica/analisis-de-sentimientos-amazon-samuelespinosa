@@ -43,7 +43,7 @@ def pregunta_04():
         max_df=1.0,
         min_df=5
     )
-    pipeline = Pipeline([
+    pipeline = pipeline([
         ("vectorizer", countVectorizer),
         ("model", BernoulliNB()),
     ])
