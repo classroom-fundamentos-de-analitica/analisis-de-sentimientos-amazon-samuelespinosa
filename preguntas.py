@@ -32,6 +32,8 @@ def pregunta_03():
 
 
 def pregunta_04():
+    from sklearn.pipeline import Pipeline
+    from sklearn.naive_bayes import BernoulliNB
     x_train, _, y_train, _ = pregunta_02()
     analyzer = pregunta_03()
     countVectorizer = CountVectorizer(
